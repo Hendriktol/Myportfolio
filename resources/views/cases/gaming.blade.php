@@ -87,7 +87,7 @@
                 <div class="col-md-12">
                     <ul class="rslides">
                         <li><img src="{{ asset('img/cases/Gaming/Twitter header - valorant.png') }}" alt=""></li>
-                        <li><img src="{{ asset('img/cases/Gaming/Livestream visuals.png') }}" alt=""></li>
+                        <li><img src="{{ asset('img/cases/Gaming/livestream visuals.png') }}" alt=""></li>
                     </ul>
                 </div>
             </div>
