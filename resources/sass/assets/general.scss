@@ -76,6 +76,11 @@ p > * {
 a {
     color: $accent;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    filter: brightness(1.1) exposure(1.02);
 }
 
 button, .button {
