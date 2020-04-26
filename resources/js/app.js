@@ -18,7 +18,6 @@ class hendrik
     {
         $('#nav-toggle').on('click', () => {
             this.openNavbar();
-            alert('clicked');
         });
         
         $(window).on('scroll', () => {
@@ -28,7 +27,6 @@ class hendrik
     
     openNavbar()
     {
-        alert('ran');
 
         if($('.nav-container').hasClass('open')) {
             $('.nav-container').removeClass('open');
