@@ -103,7 +103,7 @@
                         <div class="tag new">
                             <p>New</p>
                         </div>
-                        <img src="{{ asset('img/cases/GOrilla gang/thumbnail.png') }}" alt="">
+                        <img src="{{ asset('img/cases/Gorilla gang/thumbnail.png') }}" alt="">
                     </div>
                 </a>
                 <a href='cases/gaming' class="case">
