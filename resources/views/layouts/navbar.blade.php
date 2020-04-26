@@ -9,9 +9,9 @@
                 <div class="nav-links">
                     <div class="top-nav">
                         <a href="https://twitch.tv/hendriktol" class=""><i class="fab fa-twitch"></i></a>
-                        <a href="https://twitch.tv/hendriktol" class=""><i class="fab fa-twitter"></i></a>
-                        <a href="https://twitch.tv/hendriktol" class=""><i class="fab fa-youtube"></i></a>
-                        <a href="https://twitch.tv/hendriktol" class=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/hendriktdesigns" class=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCbK5Kcvyala3xFkpb-iQ_Qg" class=""><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/hendriktol" class=""><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="bottom-nav">
                         <a href="/">Home</a>
