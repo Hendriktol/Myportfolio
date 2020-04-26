@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="project-thumbnail">
-                    <img src="{{ asset('img/cases/25seven/Thumbnail.png') }}" alt="">
+                    <img src="{{ asset('img/cases/25seven/thumbnail.png') }}" alt="">
                 </div>
             </div>
             <div class="col-md-12 project">
