@@ -1,0 +1,105 @@
+
+footer {
+    --heading-color: #{$white};
+    --text-color: #{$dimmed};
+    
+    
+    .pre-footer {
+        background: $accent;
+        position: relative;
+        padding: 60px 0;
+        
+        .container {
+            z-index: 1;
+            position: relative;
+        }
+        
+        h2 {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: $heading-color !important;
+        }
+        
+        .social-links {
+            margin-top: 7.5px;
+            
+            a {
+                margin-right: 15px;
+                display: inline-block;
+                color: $heading-color !important;
+            }
+        }
+        
+        .footer-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            svg {
+                fill: rgba($black, .3);
+                width: 130%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+    
+    .footer {
+        background: $black;
+        padding: 60px 0;
+        
+        h2 {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            display: block;
+            font-weight: 300;
+            color: $heading-color !important;
+        }
+        
+        .col-md-4.footer-brand {
+            text-align: right;
+            
+            svg {
+                fill: $heading-color;
+                width: 180px;
+                
+                path {
+                    fill: $heading-color;
+                }
+            }
+            
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    
+    .row {
+        [class^="col-"] {
+            margin-bottom: 30px;
+        }
+        
+        [class^="col-"]:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+        
+    .footer-background {
+        svg {
+            width: 200% !Important;
+        }
+    }
+    
+    .footer-brand {
+        text-align: center !important;
+    }
+}

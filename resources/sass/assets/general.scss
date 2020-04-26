@@ -1,0 +1,424 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: $textsize;
+    line-height: 1.15;
+    letter-spacing: .95;
+    font-family: 'poppins', sans-serif;
+    color: $text;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+}
+
+h1 {
+    font-size: $h1size;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $h2size;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $h3size;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: $h4size;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: $h5size;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: $h6size;
+    font-weight: bold;
+}
+
+p, small, i {
+    font-weight: 300;
+    display: block;
+    font-style: normal;
+    color: $text;
+}
+
+small {
+    font-weight: 400;
+}
+
+strong {
+    color: $accent;
+    font-weight: 300;
+    display: block;
+}
+
+p > * {
+    display: inline;
+}
+
+a {
+    color: $accent;
+    text-decoration: none;
+}
+
+button, .button {
+    padding: 7.5px 15px;
+    background: $accent;
+    color: $white;
+    font-weight: 300;
+}
+
+hr {
+    background: $text;
+    width: 100%;
+    position: relative;
+    border: none;
+    outline: none;
+    height: .5px;
+    margin: 30px 0;
+    margin-bottom: 0;
+}
+
+section {
+    position: relative;
+    padding: 60px 0;
+    
+    .container {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+section.dimmed {
+    background: $dimmed;
+    padding: 120px 0;
+}
+
+.spacer {
+    height: 60px;
+    width: .5px;
+    background: $black;
+    display: black;
+    margin-bottom: 30px;
+}
+
+.row.reverse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col-element {
+    padding: 0 15px;
+}
+
+.section-seperator {
+    transform: translateY(-50%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+    h2 {
+        font-size: $h6size;
+        font-weight: 300;
+        color: $white;
+        padding: 10px;
+        padding-left: 0;
+        background: $accent-darkened;
+        display: inline-block;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.section-seperator::after {
+    display: block;
+    height: 100%;
+    background: $accent-darkened;
+    content: ' ';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: calc((100% - #{$containerwidth}) / 2 + 45px);
+}
+
+.bottom-cta {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(50%);
+    z-index: 5;
+}
+
+.port-section {
+    background: $black;
+    color: $white;
+    padding: 120px 0;
+    padding-bottom: 240px;
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .port-section-visuals {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+        .port-graphics-pattern {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            svg {
+                fill: rgba($white, .12);
+                width: 130%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-30%);
+                z-index: 1;
+            }
+        }
+        
+        .dutch-map {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            
+            svg {
+                right: calc(((100% - #{$containerwidth} ) / 2) - 60px);
+                width: 540px;
+                position: absolute;
+                top: -15px;
+                fill: rgba($white, .12) !important;
+                
+                path {
+                    fill: rgba($white, .12) !important;
+                    transition: all .3s ease-in-out;
+                    stroke: rgba($white, 1);
+                    stroke-width: .125px;
+                }
+            }
+        }
+    }
+}
+
+.port-section:hover {
+    
+    .dutch-map {
+        svg {
+            path {
+                fill: rgba($white, 0.06) !important;
+                stroke: rgba($white, 1);
+                stroke-width: .125px;
+            }
+        }
+        
+    }
+    
+    #Path_41 {
+        fill: rgba($white, .16) !important;
+    }
+}
+
+.post-port-section .container {
+    margin-top: -180px;
+    position: relative;
+    z-index: 5;
+    
+    .case-primary {
+        padding: 0;
+        background: $white;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        border: solid .25px rgba($text, .12);
+        
+        i {
+            color: $accent;
+        }
+        
+        .case-image {
+            width: 33%;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            
+            
+            img {
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                top: 0;
+            }
+        }
+        
+        .case-content {
+            width: 67%;
+            padding: 60px 30px;
+            padding-right: 90px;
+            padding-bottom: 150px;
+            
+            .cta {
+                display: block;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    .secondary-cases {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -120px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        
+        .case {
+            padding: 7.5px;
+            width: 25%;
+            height: 240px;
+            z-index: 1;
+            
+            .case-thumbnail {
+                background: $white;
+                height: 100%;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                border: solid .25px rgba($text, .12);
+                
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 150%;
+                }
+                
+                .tag {
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    border-radius: 15px;
+                    height: 30px;
+                    background: rgba($white, .12);
+                    padding: 0 30px;
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    color: $white;
+                    background-blend-mode: overlay;
+                    z-index: 3;
+                    
+                    * {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .secondary-cases .case-thumbnail {
+        img {
+            width: 200% !important;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .secondary-cases .case-thumbnail {
+        img {
+            width: 200% !important;
+        }
+    }
+}
+
+
+@media(max-width: 992px) {
+    .case-primary {
+        padding-top: 110px !Important;
+        
+        .case-image {
+            height: 110px !Important;
+            width: 100% !Important;
+            
+            img {
+                width: 100%;
+                height: auto !Important;
+                top: 50% !important;
+                left: 0 !important;
+                transform: translateY(-50%) !important;
+            }
+        }
+        
+        .case-content {
+            width: 100% !important;
+            padding: 15px !important;
+            padding-bottom: 140px !important;
+        }
+    }
+    
+    .secondary-cases .case {
+        width: 100% !important;
+        
+        img {
+            width: 110% !important;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .port-graphics-pattern {
+        svg {
+            width: 200% !important;
+        }
+    }
+    
+    .dutch-map {
+        svg {
+            width: 420px !important;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .secondary-cases .case {
+        img {
+            width: 130% !important;
+        }
+    }
+}
