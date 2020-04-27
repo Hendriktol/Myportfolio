@@ -21,3 +21,7 @@ Route::get('/contact', 'PageController@contact');
 Route::get('/portfolio', 'PageController@work');
 
 Route::get('/cases/{path}', 'PageController@case');
+
+Route::get('/privacy-policy', function() {
+    return "I don't have this sorted yet, I'm not gathering data at all. <a href='/'>return to the website</a>";
+});

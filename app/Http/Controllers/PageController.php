@@ -38,6 +38,24 @@ class PageController extends Controller
     {
         $page = new \stdClass;
         $page->title = $path;
+        
+        if($path === "ambions") {
+            $page->title = "Zorginstelling ambions";
+        } elseif($path === "gorilla") {
+            $page->title = "Gorilla Gang";
+            
+        } elseif($path === "25seven") {
+            $page->title = "25seven";
+            
+        } elseif($path === "gaming") {
+            $page->title = "Gaming & Esports";
+            
+        } else {
+            return redirect('/portfolio');
+            die();
+        }
+        
         return view('cases.' . $path)->with(compact('page'));
+        
     }
 }

@@ -39,10 +39,10 @@
                     <h2>Site</h2>
 
                     <a href="/">Home</a>
-                    <a href="/">About</a>
-                    <a href="/">Work</a>
-                    <a href="/">Contact</a>
-                    <a href="/">Privacy policy</a>
+                    <a href="/about">About</a>
+                    <a href="/portfolio">Work</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/privacy-policy">Privacy policy</a>
                     
                 </div>
                 <div class="col-md-4 footer-brand">
