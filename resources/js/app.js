@@ -27,7 +27,12 @@ class hendrik
     
     openNavbar()
     {
-
+        if($('#nav-toggle').hasClass('open')) {
+            $('#nav-toggle').removeClass('open');
+        } else {
+            $('#nav-toggle').addClass('open');
+        }
+        console.log('clicked');
         if($('.nav-container').hasClass('open')) {
             $('.nav-container').removeClass('open');
         } else {
@@ -49,6 +54,11 @@ class hendrik
 }
 
 $(document).ready(() => {
-    $(".rslides").responsiveSlides();
+    $(".rslides").responsiveSlides({
+        pause: true,
+        nav: true,
+        prevText: "<i class='fas fa-caret-left'></i>",
+        nextText: "<i class='fas fa-caret-right'></i>"
+    });
    window.hendrik = new hendrik; 
 });

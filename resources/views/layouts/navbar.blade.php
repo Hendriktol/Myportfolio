@@ -1,5 +1,7 @@
+<div id="nav-toggle">
+    <i class="fas fa-bars"></i>
+</div>
 <div class="nav-container">
-    <i class="fas fa-bars" id="nav-toggle"></i>
     <nav>
         <div class="container">
             <div class="row">

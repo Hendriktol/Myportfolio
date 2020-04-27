@@ -6,11 +6,6 @@
     height: 100%;
     z-index: 99;
     pointer-events: none;
-    
-    #nav-toggle {
-        display: none;
-        pointer-events: all;
-    }
 }
 
 nav {
@@ -69,7 +64,7 @@ nav {
 }
     
 #nav-toggle {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 50%;
     transform: translateX(-50%) rotate(90deg);
@@ -78,15 +73,23 @@ nav {
     border-radius: 15px;
     width: 30px;
     height: 30px;
-    z-index: 100;
+    z-index: 150;
     overflow: hidden;
-    padding: 5px;
     fill: $black;
+    display: none;
     cursor: pointer;
     box-shadow: 0 0 1px 1px rgba($black, .2);
     
-    path {
+    svg {
         fill: $black;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        transform: rotate(90deg);
+        margin: 5px;
+        
+        path {
+            fill: $black;
+        }
     }
 }
 
@@ -136,6 +139,9 @@ nav.scrolled {
                 flex-direction: column;
             }
         }
+    }
+    #nav-toggle.open {
+        transform: translateX(-50%);
     }
     
     .nav-container.open {
@@ -194,6 +200,10 @@ nav.scrolled {
                 width: 100%;
                 padding: 15px 0;
                 margin: 0 !important;
+            }
+            
+            a::after {
+                display: none;
             }
         }
     }

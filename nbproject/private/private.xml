@@ -3,15 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/grid.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/js/app.js</file>
             <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/navbar.scss</file>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/layouts/app.blade.php</file>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/general.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/.env.example</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/pages/work.blade.php</file>
             <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/app.scss</file>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/header.scss</file>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/variables.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/layouts/navbar.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/cases/gorilla.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/pages/contact.blade.php</file>
             <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/pages/home.blade.php</file>
-            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/footer.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/work.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/layouts/footer.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/pages/about.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/cases/ambions.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/general.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/layouts/app.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/routes/web.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/cases/gaming.blade.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/header.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/app/Http/Controllers/PageController.php</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/.env</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/sass/assets/variables.scss</file>
+            <file>file:/H:/work/websites/Personal%20website/hendriktol/resources/views/cases/25seven.blade.php</file>
         </group>
     </open-files>
 </project-private>

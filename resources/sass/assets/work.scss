@@ -85,3 +85,19 @@
         width: 100%;
     }
 }
+
+.rslides_nav {
+    position: absolute;
+    bottom: 45px;
+    right: 60px;
+    z-index: 45;
+    color: $white;
+    svg {
+        filter: drop-shadow(0 2px 6px rgba($black, .7));
+    }
+    
+}
+
+.rslides_nav.prev {
+    right: 75px;
+}
