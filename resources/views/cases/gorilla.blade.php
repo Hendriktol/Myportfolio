@@ -64,8 +64,9 @@
                 <strong>The products</strong>
                 <br>
                 <p>Logo</p>
-                <p>Visual system</p>
-                <p>Webdesign</p>
+                <p>Motion graphics</p>
+                <p>Social media assets</p>
+                <p>Website design and development</p>
             </div>
             <div class="col-md-8">
                 <hr>
